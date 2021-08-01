@@ -48,7 +48,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_ls_http_git_base_coviddeats_csv",
+						"referenceName": "ds_ls_http_git_base_coviddeaths_csv",
 						"type": "DatasetReference"
 					}
 				],

@@ -1,5 +1,5 @@
 {
-	"name": "ds_ls_http_git_base_coviddeats_csv",
+	"name": "ds_ls_http_git_base_coviddeaths_csv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_http_github_base",
