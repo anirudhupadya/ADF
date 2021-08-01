@@ -1,0 +1,22 @@
+{
+	"name": "ds_ls_http_git_base_coviddeats_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_github_base",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "cloudboxacademy/covid19/main/lookup_data/covid_deaths.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
