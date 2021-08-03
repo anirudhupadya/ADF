@@ -1,0 +1,15 @@
+[
+{
+ "sourceRelativeURL":"cloudboxacademy/covid19/main/ecdc_data/hospital_admissions.csv",
+ "baseURL":"https://raw.githubusercontent.com",
+ "SourceFolder":"ecdc",
+ "TargetFile":"hospital_admissions.csv"
+},
+
+{
+ "sourceRelativeURL":"cloudboxacademy/covid19/main/ecdc_data/cases_deaths.csv",
+ "baseURL":"https://raw.githubusercontent.com",
+ "SourceFolder":"ecdc",
+ "TargetFile":"cases_deaths.csv"
+}
+]
