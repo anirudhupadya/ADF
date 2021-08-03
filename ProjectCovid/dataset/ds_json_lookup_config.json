@@ -16,7 +16,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "anirudhupadya/ADF/main/ProjectCovid/Lookup/config.json?token=ADWOKXP2B45LB7T2YTAIT4LBBFDCI"
+				"relativeUrl": "anirudhupadya/ADF/main/ProjectCovid/Lookup/config.json"
 			}
 		},
 		"schema": {}
