@@ -5,6 +5,9 @@
 			"referenceName": "ls_adls_source",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Generic Datasets"
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
