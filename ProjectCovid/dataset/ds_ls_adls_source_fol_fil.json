@@ -1,0 +1,38 @@
+{
+	"name": "ds_ls_adls_source_fol_fil",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_source",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SourceFolder": {
+				"type": "string"
+			},
+			"TargetFile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().TargetFile",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().SourceFolder",
+					"type": "Expression"
+				},
+				"fileSystem": "rawdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
