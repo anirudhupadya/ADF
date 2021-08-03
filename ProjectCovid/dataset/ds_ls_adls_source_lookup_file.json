@@ -1,0 +1,35 @@
+{
+	"name": "ds_ls_adls_source_lookup_file",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "config.json",
+				"fileSystem": "lookup"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"sourceRelativeURL": {
+					"type": "string"
+				},
+				"baseURL": {
+					"type": "string"
+				},
+				"SourceFolder": {
+					"type": "string"
+				},
+				"TargetFile": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
