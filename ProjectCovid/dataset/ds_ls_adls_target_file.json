@@ -1,5 +1,5 @@
 {
-	"name": "ds_ls_adls_source_file",
+	"name": "ds_ls_adls_target_file",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adls_source",

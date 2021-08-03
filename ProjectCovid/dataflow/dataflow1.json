@@ -12,13 +12,21 @@
 					"name": "SrcHospitalAdmissions"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "ds_ls_adls_target_file",
+						"type": "DatasetReference"
+					},
+					"name": "FinalSink"
+				}
+			],
 			"transformations": [
 				{
 					"name": "SelectRequiredCols"
 				}
 			],
-			"script": "source(output(\n\t\tcountry as string,\n\t\tindicator as string,\n\t\tdate as date,\n\t\tyear_week as string,\n\t\tvalue as double,\n\t\tsource as string,\n\t\turl as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> SrcHospitalAdmissions\nSrcHospitalAdmissions select(skipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SelectRequiredCols"
+			"script": "source(output(\n\t\tcountry as string,\n\t\tindicator as string,\n\t\tdate as date,\n\t\tyear_week as string,\n\t\tvalue as double,\n\t\tsource as string,\n\t\turl as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> SrcHospitalAdmissions\nSrcHospitalAdmissions select(mapColumn(\n\t\tcountry,\n\t\tindicator,\n\t\treported_date = date,\n\t\treported_year_week = year_week,\n\t\tvalue,\n\t\tsource\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SelectRequiredCols\nSelectRequiredCols sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tpartitionFileNames:['output.csv'],\n\tumask: 0022,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tmapColumn(\n\t\tcountry,\n\t\tindicator,\n\t\treported_date,\n\t\treported_year_week,\n\t\tvalue,\n\t\tsource\n\t),\n\tpartitionBy('hash', 1)) ~> FinalSink"
 		}
 	}
 }

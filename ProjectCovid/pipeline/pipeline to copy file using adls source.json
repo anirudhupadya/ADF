@@ -1,5 +1,5 @@
 {
-	"name": "pipeline to copy file",
+	"name": "pipeline to copy file using adls source",
 	"properties": {
 		"activities": [
 			{
@@ -132,6 +132,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "Lookup in Adls"
+		},
 		"annotations": []
 	}
 }
