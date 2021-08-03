@@ -1,0 +1,24 @@
+{
+	"name": "ds_json_lookup_config",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_source",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"baseURL": "https://raw.githubusercontent.com"
+			}
+		},
+		"folder": {
+			"name": "Generic Datasets"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "anirudhupadya/ADF/main/ProjectCovid/Lookup/config.json?token=ADWOKXP2B45LB7T2YTAIT4LBBFDCI"
+			}
+		},
+		"schema": {}
+	}
+}
