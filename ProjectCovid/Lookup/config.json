@@ -14,14 +14,14 @@
 },
  
 {
- "sourceRelativeURL":"cloudboxacademy/covid19/blob/main/lookup_data/country_lookup.csv",
+ "sourceRelativeURL":"cloudboxacademy/covid19/main/lookup_data/country_lookup.csv",
  "baseURL":"https://raw.githubusercontent.com",
  "SourceFolder":"lookup",
  "TargetFile":"country_lookup.csv"
 },
  
 {
- "sourceRelativeURL":"cloudboxacademy/covid19/blob/main/lookup_data/dim_date.csv",
+ "sourceRelativeURL":"cloudboxacademy/covid19/main/lookup_data/dim_date.csv",
  "baseURL":"https://raw.githubusercontent.com",
  "SourceFolder":"lookup",
  "TargetFile":"dim_date.csv"
