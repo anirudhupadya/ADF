@@ -151,7 +151,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow1",
+						"referenceName": "dataflow_to_transform_data",
 						"type": "DataFlowReference"
 					},
 					"integrationRuntime": {
