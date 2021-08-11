@@ -1,0 +1,55 @@
+{
+	"name": "ds_ls_sql_db_tb_daily",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_db",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Folder Specific DataSets"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "country",
+				"type": "varchar"
+			},
+			{
+				"name": "country_code_2_digit",
+				"type": "varchar"
+			},
+			{
+				"name": "country_code_3_digit",
+				"type": "varchar"
+			},
+			{
+				"name": "population",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "reported_date",
+				"type": "timestamp"
+			},
+			{
+				"name": "hospital_occupancy_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "icu_occupancy_count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "source",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "covid_reporting",
+			"table": "daily"
+		}
+	}
+}
