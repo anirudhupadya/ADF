@@ -2,7 +2,7 @@
 	"name": "Trigger to Ingest data",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "pipeline to copy file using git",
