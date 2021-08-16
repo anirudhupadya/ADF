@@ -1,0 +1,17 @@
+{
+	"name": "trigger to ingest data",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2021-08-16T08:22:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
