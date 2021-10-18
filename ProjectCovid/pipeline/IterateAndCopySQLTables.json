@@ -76,7 +76,7 @@
 											"type": "Expression"
 										},
 										"Schema": {
-											"value": "@item().TABLE_SCHEMA",
+											"value": "test",
 											"type": "Expression"
 										}
 									}
