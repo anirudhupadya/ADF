@@ -72,7 +72,7 @@
 											"type": "Expression"
 										},
 										"Schema": {
-											"value": "test",
+											"value": "\"test\"",
 											"type": "Expression"
 										}
 									}
