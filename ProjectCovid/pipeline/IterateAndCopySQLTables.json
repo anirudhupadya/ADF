@@ -72,7 +72,7 @@
 											"type": "Expression"
 										},
 										"Schema": {
-											"value": "@item().SCHEMA_Name='test'",
+											"value": "test",
 											"type": "Expression"
 										}
 									}
