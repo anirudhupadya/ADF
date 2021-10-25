@@ -1,5 +1,5 @@
 {
-	"name": "WaterMark_Table",
+	"name": "WaterMark_Table_deltacopy",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_sql_db",
