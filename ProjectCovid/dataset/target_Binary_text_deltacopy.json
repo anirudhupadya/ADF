@@ -1,5 +1,5 @@
 {
-	"name": "Binary_text",
+	"name": "target_Binary_text_deltacopy",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adls_source",
