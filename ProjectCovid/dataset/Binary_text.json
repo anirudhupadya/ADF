@@ -1,0 +1,21 @@
+{
+	"name": "Binary_text",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_source",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Delta Copy"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "delta",
+				"fileSystem": "Blob"
+			}
+		}
+	}
+}
