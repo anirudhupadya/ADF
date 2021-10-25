@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable",
+	"name": "SourceSqlTable_deltacopy",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_sql_db",
