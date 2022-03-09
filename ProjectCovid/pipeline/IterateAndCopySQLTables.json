@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "IterateSQLTables111",
+				"name": "IterateSQLTables",
 				"type": "ForEach",
 				"dependsOn": [],
 				"userProperties": [],
